@@ -1,0 +1,85 @@
+{
+  "nomPromo": "Promo EDWM2609",
+  "dateDebut": "14/09/2026",
+  "dateFin": "30/04/2027",
+  "description": "La formation Développeur Web et Web Mobile de l'ENI permet d'acquérir les compétences nécessaire pour concevoir et developper des sites web et des applications web. Cette page présente les informations générales de notre promotion EDWM2609.",
+  "nombreApprenants": 6,
+  "apprenants" : [
+    {
+      "id" : 1,
+      "nom" : "PIARDET",
+      "prenom" : "Gautier",
+      "ville" : "Royan",
+      "avatar" : "avatar.png",
+      "anecdotes" : "A crée son premier site web et a découvert le plaisir de donner vie à ses idées grâce au code.",
+      "coordonnees": {
+        "latitude" : "45.6234",
+        "longitude" : "-1.0432"
+      }
+    },
+    {
+      "id" : 2,
+      "nom" : "GUILLET",
+      "prenom" : "Alizee",
+      "ville" : "Nantes",
+      "avatar" : "avatar.png",
+      "anecdotes" : "Passionné par l'ergonomie et le design web.",
+      "coordonnees": {
+        "latitude" : "47.2183",
+        "longitude" : "-1.5542"
+      }
+    },
+    {
+      "id" : 3,
+      "nom" : "LE CORRE",
+      "prenom" : "Simon",
+      "ville" : "La Rochelle",
+      "avatar" : "avatar.png",
+      "anecdotes" : "Passionné par la création d'interfaces web interactives.",
+      "coordonnees": {
+        "latitude" : "46.1570",
+        "longitude" : "-1.1563"
+      }
+    },
+    {
+      "id" : 4,
+      "nom" : "MARTIN ROY",
+      "prenom" : "Raphael",
+      "ville" : "Saint-Saturnin-du-Bois",
+      "avatar" : "avatar.png",
+      "anecdotes" : "A développé son propre jeu vidéo avant de rejoindre la formation.",
+      "coordonnees": {
+        "latitude" : "46.1365",
+        "longitude" : "-0.6712"
+      }
+    },
+    {
+      "id" : 5,
+      "nom" : "HOBLOS",
+      "prenom" : "Ritta",
+      "ville" : "Etampes",
+      "avatar" : "avatar.png",
+      "anecdotes" : "Adore résoudre des défis d'algorithmique pendant son temps libre.",
+      "coordonnees": {
+        "latitude" : "48.4347",
+        "longitude" : "2.1610"
+      }
+    },
+    {
+      "id" : 6,
+      "nom" : "PIOLI",
+      "prenom" : "Hélène",
+      "ville": "Parthenay",
+      "avatar" : "avatar.png",
+      "anecdotes" : "A résolu son premier bug après plusieurs essais et a compris que la patience est une qualité essentielle en développement web.",
+      "coordonnees": {
+        "latitude" : "46.6487",
+        "longitude" : "-0.2515"
+      }
+    }
+  ]
+}
+
+
+  
+

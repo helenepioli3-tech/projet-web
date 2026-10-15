@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo ENI</title>
+    <link rel ="stylesheet" href ="style.css">
+</head>
+<body>
+
+    <header class="entete">
+        <div class ="logo-titre">
+        <img src ="logo.png" alt ="Logo ENI">
+        <h1 id="nomPromo"></h1>
+    </div>        
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="preferences.html">Préférences</a>
+        <a href="carte.html">Carte</a>
+        <a href="informations.html">Informations</a>
+    </nav>
+    </header>
+
+    <section>
+        <div class="choix-affichage">
+        <p>Type affichage</p>
+        <label>
+            <input type ="radio" name ="affichage" value ="liste" checked>
+            Liste
+        </label>
+        <label>
+            <input type ="radio" name ="affichage" value ="cartes">
+            Cartes
+        </label>
+        </div>
+    </section>
+
+    <h2>Liste des apprenants</h2>
+    <div class="conteneur-tableau">
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>ville</th>
+            <th></th>
+        </tr>
+        <tbody id="liste-apprenants">
+        </tbody>
+    </table>
+    </div>
+
+<div id="liste-cartes"></div>
+
+<div id="fenetre-detail" class="fenetre-detail">
+    <div class="entete-detail">
+        <img id="avatar-detail" src="" alt="Avatar de l'apprenant">
+        <div class="informations-detail">
+            <p>Nom : <span id="nom-detail"></span></p>
+            <p>Prénom : <span id="prenom-detail"></span></p>
+            <p>Ville : <span id="ville-detail"></span></p>
+            <p id="coordonnees-detail"></p>
+        </div>
+    </div>
+    <p class="titre-anecdote">Anecdotes sur l'apprenant :</p>
+    <div id="anecdote-detail"></div>
+</div>
+
+<script src="theme.js"></script>
+<script src="script.js"></script>
+<script src="cartes.js"></script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+body {
+    background-color: #e0f2fe;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+ 
+section {
+    text-align: center;
+    margin: 40px auto 0 auto;
+}
+ 
+section h2 {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+   /*EN-TÊTE ET MENU*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+ 
+.logo-titre {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+ 
+header img {
+    width: 80px;
+}
+ 
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    white-space: nowrap;
+}
+ 
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ 
+   /*BOUTONS (menu, retour, enregistrer, détail)*/
+
+nav a, .btn-retour, button, input[type="submit"] {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+ 
+nav a:hover, .btn-retour:hover, button:hover, input[type="submit"]:hover {
+    background-color: #f0f0f0;
+}
+ 
+
+   /*PAGE D'ACCUEIL*/
+ 
+/* Choix liste / cartes */
+.choix-affichage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+ 
+.choix-affichage p {
+    margin: 0;
+}
+ 
+/* Tableau */
+.conteneur-tableau {
+    width: 50%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 20px 0;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #000;
+    background-color: #ffffff;
+}
+ 
+th {
+    background-color: #e0e0e0;
+    color: #333333;
+    text-align: left;
+    padding: 25px 12px;
+    border: 2px solid #000;
+}
+ 
+td {
+    padding: 25px 12px;
+    border: 2px solid #000;
+}
+ 
+td a {
+    color: #315bb5;
+    text-decoration: none;
+}
+ 
+td a:hover {
+    text-decoration: underline;
+}
+ 
+/* Cartes (cachées au départ, script.js les affiche si besoin) */
+#liste-cartes {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+ 
+.carte {
+    border: 3px solid #333;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+   /*FENÊTRE DE DÉTAIL (cachée au départ)*/
+
+.fenetre-detail {
+    display: none;
+    position: fixed;
+    bottom: 200px;
+    right: 20%;
+    width: 450px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #000;
+    z-index: 1000;
+}
+ 
+.entete-detail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+ 
+.fenetre-detail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+ 
+.informations-detail p {
+    margin: 6px 0;
+}
+ 
+.titre-anecdote {
+    margin: 20px 0 8px 0;
+}
+ 
+#anecdote-detail {
+    border: 2px solid #000;
+    padding: 15px;
+    min-height: 80px;
+}
+
+   /*PAGE INFORMATIONS*/
+
+.conteneur-rectangles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    width: 90%;
+}
+ 
+.rectangle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.rectangle h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+ 
+.contenu-rectangle {
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 4px;
+}
+ 
+.rectangle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+.rectangle li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+ 
+.rectangle a {
+    color: #315bb5;
+    text-decoration: underline;
+}
+ 
+.conteneur-bouton {
+    text-align: center;
+    margin-top: 40px;
+}
+ 
+
+   /*PAGE PRÉFÉRENCES*/
+
+.conteneur-preferences {
+    max-width: 800px;
+    width: 90%;
+    margin: 100px auto 0 auto;
+}
+ 
+.conteneur-preferences h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 80px;
+    font-weight: normal;
+}
+ 
+main form {
+    display: flex;
+    flex-direction: column;
+}
+ 
+/* Une ligne du formulaire : libellé à gauche, champ à droite */
+.groupe-formulaire {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 550px;
+    margin: 0 auto 40px auto;
+    font-size: 1rem;
+    gap: 20px;
+}
+ 
+.libelle {
+    width: 350px;
+    margin: 0;
+}
+ 
+.groupe-formulaire select {
+    width: 90px;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+ 
+.format-affichage {
+    align-items: flex-start;
+}
+ 
+.format-affichage p {
+    margin-top: 0;
+}
+ 
+.option-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 180px;
+    box-sizing: border-box;
+}
+ 
+.option-radio label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+ 
+.conteneur-bouton-preferences {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 60px;
+    width: 100%;
+}
+ 
+
+   /*THÈME SOMBRE (classe "sombre" ajoutée au body par theme.js)*/
+
+body.sombre {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+ 
+body.sombre table,
+body.sombre .contenu-rectangle,
+body.sombre .carte,
+body.sombre .fenetre-detail {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border-color: #f1f5f9;
+}
+ 
+body.sombre th {
+    background-color: #334155;
+    color: #f1f5f9;
+}
+ 
+body.sombre td,
+body.sombre #anecdote-detail {
+    border-color: #f1f5f9;
+}
+ 
+body.sombre td a,
+body.sombre .rectangle a {
+    color: #7dd3fc;
+}
+
+    /*Carte map */
+#map {
+    height: 450px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titre-carte {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.conteneur-bouton-carte {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 60px;
+    width: 100%;
+}
+/*Pour le format Smartphone*/
+@media (max-width: 768px) {
+  
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-titre {
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a, .btn-retour, button, input[type="submit"] {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* Tableau responsive */
+  .conteneur-tableau {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  th, td {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Formulaires & conteneurs */
+  .groupe-formulaire {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .libelle {
+    width: 100%;
+  }
+
+  .fenetre-detail {
+    width: 95%;
+    right: 2.5%;
+  }
+}
+ 

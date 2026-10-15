@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo ENI</title>
+    <link rel ="stylesheet" href ="style.css">
+</head>
+<body>
+    
+    <header class="entete">
+        <div class ="logo-titre">
+        <img src ="logo.png" alt ="Logo ENI">
+        <h1 id="nomPromo"></h1>
+    </div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="preferences.html">Préférences</a>
+        <a href="carte.html">Carte</a>
+        <a href="informations.html">Informations</a>
+    </nav>
+    </header>
+    
+    <section>
+        <h2>* INFORMATIONS GENERALES*</h2>
+        <p>Formation du <span id="dateDebut"></span> au <span id="dateFin"></span></p>
+        <p>Nombre d'apprenants: <span id="nombreApprenants"></span></p>
+    </section>
+    <div class="conteneur-rectangles">
+        <div class="rectangle">
+        <h3>Description</h3>
+        <div class="contenu-rectangle">
+            <p id="description"></p>
+        </div>
+    </div>
+    <div class="rectangle">
+    <h3>Liens utiles</h3>
+    <div class="contenu-rectangle">
+        <ul>
+            <li><a href ="https://openclassrooms.com/" target="_blank">Lien n°1</a></li>
+            <li><a href ="https://www.udemy.com/" target="_blank">Lien n°2</a></li>
+            <li><a href ="https://developer.mozilla.org/fr/" target ="_blank">Lien n°3</a></li>
+            <li><a href ="https://www.w3schools.com/" target="_blank">Lien n°4</a></li>
+            <li>...</li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class ="conteneur-bouton">
+    <a href="index.html" class="btn-retour">Retour à la page d'Accueil</a>
+</div>
+<script src ="informations.js"></script>
+<script src ="script.js"></script>
+<script src ="theme.js"></script>
+</body>
+</html>

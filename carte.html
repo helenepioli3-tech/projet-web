@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo ENI</title>
+    <link rel ="stylesheet" href ="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+ 
+</head>
+<body>
+
+    <header class="entete">
+        <div class ="logo-titre">
+        <img src ="logo.png" alt ="Logo ENI">
+        <h1 id="nomPromo"></h1>
+    </div>        
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="preferences.html">Préférences</a>
+        <a href="carte.html">Carte</a>
+        <a href="informations.html">Informations</a>
+    </nav>
+    </header>
+    <h2 class="titre-carte">Carte</h2>
+    <div id="map"></div>
+    <div class="conteneur-bouton-carte">
+        <a href="index.html" class="btn-retour">Retour à la page d'Accueil</a>
+    </div>    
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="theme.js"></script>
+  <script src="map-carte.js"></script>
+</body>
+</html>
